@@ -1,0 +1,704 @@
+
+/* ============================General Style============================ */
+
+body
+{
+    margin: 0;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+h1,h2,h3,h4,h5,h6
+{
+    margin: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+.container
+{
+    max-width: 90%;
+    margin: auto;
+    padding: 40px 15px;
+}
+*{
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+.padding-section
+{
+padding-top: 80px;
+padding-bottom: 30px;
+}
+
+.header
+{
+    /* background-color: teal; */
+    text-align: center;
+}
+
+.header h2
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #8B8B97;
+}
+
+.header p
+{
+    font-size: 50px;
+    font-weight: 400;
+    font-family: "Amatic Sc";
+    margin-top: 0;
+    color: black;
+}
+
+.header span
+{
+    font-size: 50px;
+    font-weight: 400;
+    font-family: "Amatic Sc";
+    color: #E61414;
+}
+
+/* ============================NavBar Style============================*/
+
+.navbar
+{   
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: white;
+    font-family: "roboto";
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.2);
+
+}
+.navbar .container 
+{
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    padding: 25px 15px;
+}
+
+
+.navbar .logo
+{
+    /* background-color: aqua; */
+    /* padding: 10px 0px; */
+}
+.navbar .logo a
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    position: relative;
+}
+
+.navbar .logo a::after
+{
+    content: ".";
+    color: #CE1212;
+}
+
+
+.navbar .nav-links
+{
+    /* background-color: brown;*/
+    display: none;
+}
+
+.navbar .dark-light-switch
+{
+    font-size: 25px;
+}
+
+/*================== nav bar Style============================ */
+
+/* ===================== home Style =============================== */
+
+.home
+{
+    background-color: #EEEEEE;
+    min-height: 100vh;
+}
+
+.home .home-photo img
+{
+    width: 100%;
+    box-shadow: 0px 0px 7px 5px rgba(0,0,0,0.3);
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+
+.home .home-photo img:hover
+{
+    animation: shakeX 0.5s infinite;
+}
+
+@keyframes shakeX
+{
+    0%
+    {
+        transform: translateX(0px) rotate(0deg);
+    }
+    25%
+    {
+        transform: translateX(5px) rotate(3deg);
+    }
+    50%
+    {
+        transform: translateX(-5px) rotate(-3deg);
+    }
+    75%
+    {
+        transform: translateX(5px) rotate(3deg);
+
+    }
+    100%
+    {
+        transform: translateX(0px) rotate(0deg);
+
+    }
+}
+
+
+.home .home-content
+{
+    /* background-color: teal; */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home .home-content p
+{
+    margin: 20px 0px;
+}
+.home .home-content h2
+{
+    color: 37373F;
+    font-size: 65px;
+    font-weight: 700;
+    font-family: amatic sc;
+}
+
+.home .home-content .buttons-group
+{
+    /* background-color: #09c; */
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.home .home-content .buttons-group .main-btn 
+{
+    width: fit-content;
+}
+
+.home .home-content .buttons-group .main-btn:hover a
+{
+    background-color:#E61414 ;
+}
+
+.home .home-content .buttons-group .main-btn a
+{
+    
+    background-color:#ce1212;
+    border-radius: 50px;
+    display: inline-block;
+    color: white;
+    padding: 10px 25px;
+    transition: all 0.5s;
+}
+
+.home .home-content .buttons-group .video-btn 
+{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.home .home-content .buttons-group .video-btn .video-logo
+{
+    background: linear-gradient(90deg, #E61414 45%  , #EEE 45%);
+    padding: 6px;
+    border-radius: 100%;
+}
+.home .home-content .buttons-group .video-btn .video-logo i
+{
+    color: white;
+    font-size: 36px;
+    margin-right: 10px;
+    border-radius: 100%;
+    background-color: black;
+    transition: all 0.5s;
+}
+
+
+.home .home-content .buttons-group .video-btn span
+{
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.home .home-content .buttons-group .video-btn:hover i
+{
+    background-color:#E61414 ;
+}
+.home .home-content .buttons-group .video-btn:hover span
+{
+    color: #E61414;
+}
+
+
+
+/* ===================== home Style =============================== */
+
+
+/* ===================== Chefs Style =============================== */
+
+.chefs 
+{
+    /* background-color: tomato; */
+}
+
+.chefs .chefs-cards
+{
+    /* background-color: tomato; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.chefs .chefs-cards .card
+{
+    /* background-color: teal; */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    width: 100%;
+ 
+}
+
+.chefs .chefs-cards .card:hover
+{
+    transform: scale(1.05);
+}
+
+
+.chefs .chefs-cards .card:hover .card-content ul
+{
+    transform: translateX(0%);
+}
+
+.chefs .chefs-cards .card .card-content i:hover
+{
+    color: #46454B;
+}
+
+
+.chefs .chefs-cards .card .card-photo
+{
+    position: relative;
+}
+.chefs .chefs-cards .card .card-photo::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(../images/team-shape.svg);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 50px;
+}
+
+.chefs .chefs-cards .card .card-content
+{
+    /* background-color: tan; */
+    text-align: center;
+    padding: 10px 25px;
+}
+
+.chefs .chefs-cards .card .card-content h3
+{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.chefs .chefs-cards .card .card-content span, p
+{
+    font-size: 15px;
+    font-weight: 400;
+    color: #8b8b97;
+}
+
+
+.chefs .chefs-cards .card .card-content ul
+{
+    position: absolute;
+    top: 3px;
+    right: 8px;
+    width: fit-content;
+    background-color: #ffffff4d;
+    list-style-type:none ;
+    padding: 10px;
+    transform: translateX(200%);
+    transition: all 0.5s ease;
+
+}
+.chefs .chefs-cards .card .card-content li
+{
+    padding: 8px 0px;
+}
+.chefs .chefs-cards .card .card-content i 
+{
+    font-size: 18px;
+    color: #8F8786;
+    transition: all 0.3s ease;
+}
+/* =====================End Chefs Style =============================== */
+/* =====================Start Gallery Style =============================== */
+
+.gallery
+{
+    background-color: #EEEEEE;
+}
+.gallery .container .gallery-imgs 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery .container .gallery-imgs .card
+{
+    border: 2px #fff solid;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .container .gallery-imgs .card:hover .layer
+{
+    transform: translate(0%);
+}
+
+
+.gallery .container .gallery-imgs .card .layer
+{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(100%);
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.gallery .container .gallery-imgs .card .layer h2
+{
+    color: white;
+}
+.gallery .container .gallery-imgs .card .layer p
+{
+    color: #DDDDDD;
+}
+
+
+/* =====================End Gallery Style =============================== */
+/* =====================Start Contact Style =============================== */
+
+.contact iframe
+{
+    width: 100%;
+    height: 300px;
+    border: 0;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.contact .contact-info
+{
+    /* background-color: tomato; */
+    margin:25px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.contact .contact-info .contact-card
+{
+    padding: 25px;
+    background-color: #F5F5F5;
+    display: flex;
+    width: 100%;    
+}
+
+.contact .contact-info .contact-card .card-logo i
+{
+    font-size: 18px;
+}
+
+
+
+.contact .contact-info .contact-card .card-logo
+{
+    background-color: #CE1212;
+    min-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+}
+
+.contact .contact-info .contact-card .card-content a
+{
+    color: #8B8B97;
+}
+
+.contact .contact-info .contact-card .card-content p
+{
+    margin: 0;
+}
+
+.contact .contact-info .contact-card .card-content h3
+{
+    color: #7D7D7D;
+    margin-bottom: 5px;
+}
+
+
+form
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
+}
+
+.input-group
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+
+}
+
+input , textarea 
+{
+    width: 100%;
+    padding: 15px;
+}
+
+form button
+{
+    margin: auto;
+    width: fit-content;
+    border-radius: 50px;
+    padding: 10px 25px;
+    border-color: #CE1212;
+    background-color: #CE1212;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 25px;
+    transition: all 0.5s;
+}
+
+form button:hover
+{
+    background-color:#E61414 ;
+}
+
+
+/* =====================End Contact Style =============================== */
+
+
+/* =====================Start Footer Style =============================== */
+
+.footer
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/textured-metal-background.jpg);
+    background-position: center center;
+    background-size: contain;
+    color: white;
+}
+
+.footer .about .about-logo img
+{
+    max-width:40px;
+}
+
+
+.footer .about .about-logo h2
+{
+    font-size: 30px;
+}
+.footer .about .about-logo
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer p
+{
+    color: white;
+}
+
+
+/* About */
+.footer .about h3
+{
+    text-align: center;
+}
+
+.footer .about ul i
+{
+    color: white;
+    font-size: 24px;
+}
+.footer .about ul
+{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+/* Subscribtion */
+
+.footer .subscribtion
+{
+    width: 100%;
+}
+
+.footer .subscribtion .subscribtion-search
+{
+    display: flex;
+    gap: 5px;
+}
+
+.footer .subscribtion .subscribtion-search input
+{
+    padding: 10px;
+}
+.footer .subscribtion .subscribtion-search button
+{       
+    padding: 10px;
+    max-width: 30%;
+    min-width: fit-content;
+    border-color: #CE1212;
+    background-color: #CE1212;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+
+.footer .subscribtion .subscribtion-search button:hover
+{
+    background-color:#E61414 ;
+}
+
+
+.footer .subscribtion .quick-links h3
+{
+    margin-top: 20px;
+}
+
+.footer .subscribtion .quick-links ul
+{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .subscribtion .quick-links a
+{
+    margin-left: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer .subscribtion .quick-links li
+{
+    width: 49%;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.footer .subscribtion .quick-links li:hover
+{
+    transform: translateX(10px);
+    background-color: #222222;
+}
+
+/* Contact details */
+.footer .contact-details ul
+{
+    padding: 0px;
+    list-style-type: none;
+}
+
+.footer .contact-details i
+{
+    font-size: 22px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #CE1212;
+}
+
+
+.footer .contact-details a
+{
+    color: white;
+}
+
+.footer .contact-details li
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding:8px 0px ;
+    /* justify-content: flex-start; */
+}
+
+
+
+
+
+/* =====================End Footer Style =============================== */
